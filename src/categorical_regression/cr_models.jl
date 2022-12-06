@@ -10,5 +10,6 @@ end
   β ~ Normal(0,1)
   σ² ~ truncated(Normal(0, 100); lower = 0) # Gelmans: noninformative variance prior  
 
-linpred = α .+ β .* x
-y .~ Normal(linpred, σ²)
+  linpred = α .+ β .* x
+  y .~ Normal(linpred, σ²)
+end
